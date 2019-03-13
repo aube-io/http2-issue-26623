@@ -1,0 +1,20 @@
+{
+  "name": "http2-issue-26623",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "certificat": "openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' -keyout localhost.key.pem -out localhost.cert.pem",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florenthagard/http2-issue-26623.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florenthagard/http2-issue-26623/issues"
+  },
+  "homepage": "https://github.com/florenthagard/http2-issue-26623#readme"
+}
