@@ -1,0 +1,32 @@
+<html>
+	<head></head>
+	<body>
+		<form method="POST" action="/">
+			<input type="file" name="textfield" multiple>
+			<input type="submit">
+		</form>
+		<script type="text/javascript" defer>
+			let $form = document.querySelector('form');
+			if ($form){
+				$form.addEventListener('submit', e => {
+					e.preventDefault();
+					
+					let request = new XMLHttpRequest();
+						request.open("POST",location.href);
+						/*request.onload = () => {
+							location.href = '/';
+						}*/
+						request.send(new FormData($form));
+
+					/*
+					fetch(location.href,{
+						mode:'no-cors',
+						method:'POST',
+						body:new FormData($form)
+					});
+					*/
+				});
+			}
+		</script>
+	</body>
+</html>

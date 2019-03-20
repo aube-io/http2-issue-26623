@@ -16,5 +16,7 @@
   "bugs": {
     "url": "https://github.com/florenthagard/http2-issue-26623/issues"
   },
-  "homepage": "https://github.com/florenthagard/http2-issue-26623#readme"
+  "homepage": "https://github.com/florenthagard/http2-issue-26623#readme",
+  "dependencies": {
+  }
 }
