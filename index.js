@@ -4,8 +4,9 @@ const fs 	  = require('fs');
 
 const index   = fs.readFileSync(__dirname + '/index.html').toString();
 const options = {
-	key  : fs.readFileSync(__dirname + '/localhost.key.pem'),
-	cert : fs.readFileSync(__dirname + '/localhost.cert.pem')
+	allowHTTP1 : true,
+	key  	   : fs.readFileSync(__dirname + '/localhost.key.pem'),
+	cert 	   : fs.readFileSync(__dirname + '/localhost.cert.pem')
 };
 
 let http2server = http2.createSecureServer(options,(req,res) => {
